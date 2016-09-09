@@ -1,4 +1,4 @@
-PHP Redis implementation V2.1
+PHP Redis implementation V2.1.1
 ==============
 
 Simple and lightweight redis implementation, all commands are passed as is, so you have all the freedom to manage redis just like in redis-cli.

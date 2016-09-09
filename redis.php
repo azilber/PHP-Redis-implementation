@@ -67,7 +67,7 @@ class redis_cli
 
         if ( $silent_fail )
         {
-            $this -> handle = @fsockopen ( $host, $port, $errno, $errstr, $this -> connect_timeout );
+            $this -> handle = @stream_socket_client( 'tcp://' . $host  . ':' . $port, $errno, $errstr, $this -> connect_timeout );
 
             if ( !$this ->  handle )
             {
