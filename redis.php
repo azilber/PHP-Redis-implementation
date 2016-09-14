@@ -76,7 +76,7 @@ class redis_cli
         }
         else
         {
-            $this -> handle = @stream_socket_client( 'tcp://' . $host  . ':' . $port, $errno, $errstr, $this -> connect_timeout );
+            $this -> handle = stream_socket_client( 'tcp://' . $host  . ':' . $port, $errno, $errstr, $this -> connect_timeout );
         }
 
         if ( is_resource ( $this -> handle ) )
